@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">xo</string>
+    <string name="reset_game">reset game</string>
+    <string name="continue1">continue</string>
 </resources>

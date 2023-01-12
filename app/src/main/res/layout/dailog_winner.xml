@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="your choice about next round?"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/continue_game"
+            android:text="@string/continue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginStart="8dp"
+            android:id="@+id/reset_game"
+            android:text="@string/reset_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
