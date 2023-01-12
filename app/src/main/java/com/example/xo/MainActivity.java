@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
 private int xOrO = 0;
 // 2 is empty state
 private int[] state = {2,2,2,2,2,2,2,2,2};
+private final int[] winP1 = {0,1,2};
+private final int[] winP2 = {3,4,5};
+private final int[] winP3 = {6,7,8};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +34,8 @@ private int[] state = {2,2,2,2,2,2,2,2,2};
 
      }
      imageView.animate().translationYBy(1500).rotation(3600).setDuration(400);
+     if (state[winP1[0]]==state[winP1[1]] && state[winP1[0]]==state[winP1[2]] && state[0]!=2){
+         Toast.makeText(this,"win",Toast.LENGTH_SHORT).show();
+     }
      }
 }
