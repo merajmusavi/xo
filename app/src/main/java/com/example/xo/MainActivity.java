@@ -46,6 +46,7 @@ TextView x,o;
 
               DialogWInner dialogWInner = new DialogWInner();
               dialogWInner.show(getSupportFragmentManager(),null);
+              dialogWInner.setCancelable(false);
             }
         }
      
@@ -95,4 +96,5 @@ TextView x,o;
             Toast.makeText(this, "winner x", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
